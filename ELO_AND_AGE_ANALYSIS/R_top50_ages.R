@@ -7,12 +7,4 @@ data <- data.frame(xValue = x, yValue = y)
 
 ggplot(data, aes(x = xValue, y = yValue)) +
   geom_line() +
-  labs(x = "Year", y = "Average age") +
-  # Add arrows and labels for 1993
-  geom_segment(aes(x = 1993, xend = 1993, y = 31.84, yend = 34),
-               arrow = arrow(length = unit(0.2, "cm")), color = "red") +
-  annotate("text", x = 1993, y = 34.5, label = "FIDE-PCA Split", color = "red") +
-  # Add arrows and labels for 2006
-  geom_segment(aes(x = 2006, xend = 2006, y = 29.06, yend = 32.4),
-               arrow = arrow(length = unit(0.2, "cm")), color = "blue") +
-  annotate("text", x = 2006, y = 32.5, label = "Title Re-unification", color = "blue", vjust = -1)
+  labs(x = "Year", y = "Average age") 
