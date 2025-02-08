@@ -1,2 +1,3 @@
 This project includes a calculator for the year on year ELO inflation of the top 50 FIDE rated players at the end of every year since 1975, as well as general statistical analysis of ELO inflation, and the age of players from 1975-2025.
 The languages used are Python (Calculator), Javascript (Data scraper), and R (Graphing of statistics).
+A Python scraper was also used for sampling FIDE data. Though unable to recover the exact original, it is fairly easy to recruit, it just scrapes data from the exact columns that ELO rating is on (for 2015-2016 that is located differently than 2017-2025).
